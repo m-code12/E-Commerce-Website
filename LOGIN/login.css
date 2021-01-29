@@ -1,0 +1,64 @@
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+.card{
+    width: 800px;
+    height: 600px;
+    background-color: white;
+    border: 4px solid rgb(230, 22, 22);
+    margin: auto;
+    margin-top: 10%;
+}
+
+.content{
+    height: 600px;
+    width: 400px;
+    background-color: rgb(248, 248, 248);
+    float: right;
+}
+input[type=text], input[type=password]{
+    width: 80%;
+    padding: 12px 20px;
+    margin-top: 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: rgb(212, 201, 201);
+}
+input[type=submit]{
+    margin-top: 10px;
+    width: 80%;
+    padding: 12px 20px;
+    background-color: rgb(24, 255, 24);
+    border: none;
+}
+input[type=checkbox]{
+    margin-top: 5%;
+}
+.container{
+    height: 200px;
+    width: 300px;
+    margin-top: 20%;
+    margin-left: 20%;
+}
+
+.container img{
+    border-radius: 50%;
+    margin-left: 20%;
+}
+
+.signup{
+    background-color: red;
+    margin-top: 5%;
+}
+.signup a{
+    color: white;
+}
+.login{
+    background-color: blue;
+    margin-left: 09%;
+}
+.login a{
+    color: white;
+}
