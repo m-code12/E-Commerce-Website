@@ -17,12 +17,12 @@
 
 ### Feb Week 3
 
-* Start with the About us/Add to Cart for the website
+* Start with the About us/Add to Cart page for the website
 * Start developin the Payment's Page for the users of the website
 
 ### Feb Week 4
 
-* Finish with the frontend development part
+* Finish with the frontend development and design part of the website
 
 ### March Week 1
 
