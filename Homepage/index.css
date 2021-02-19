@@ -89,3 +89,62 @@ html {
   -webkit-background-clip: text;
   color: transparent;
 }
+
+.primary__heading__main {
+  animation: moveInTop 2s ease-out;
+}
+.primary__heading__sub {
+  animation: moveInLeft 2s ease-out;
+}
+
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-20rem);
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255),
+      rgba(220, 220, 220)
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255),
+      rgba(220, 220, 220)
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20rem);
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255),
+      rgba(220, 220, 220)
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255),
+      rgba(220, 220, 220)
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}
