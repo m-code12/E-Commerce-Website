@@ -37,6 +37,11 @@ html {
   color: aqua;
 }
 
+.List-4 a {
+  color: unset;
+  border: 0;
+}
+
 .List-5 {
   float: right;
 }
