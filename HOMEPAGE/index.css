@@ -41,18 +41,123 @@ html {
   float: right;
 }
 
+@media only screen and (max-width: 500px) {
+  .Navbar__List {
+    float: none;
+  }
+}
+
 .section__home {
   height: 96vh;
+  position: relative;
   background-image: linear-gradient(
       to right bottom,
-      rgb(15, 54, 161),
-      rgb(0, 21, 114)
+      rgba(42, 197, 176, 0.7),
+      rgba(14, 13, 83, 0.7)
     ),
     url(../assets/13nov_resize.jpg);
-  background-blend-mode: color;
+  background-blend-mode: color-burn;
   background-size: cover;
-  background-position: bottom;
+  background-position: top left;
 
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 76vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 76vh, 0 100%);
+}
+
+.primary__heading {
+  width: 100%;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  text-align: center;
+
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255),
+    rgba(220, 220, 220)
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.primary__heading__main {
+  animation: moveInTop 2s ease-out;
+}
+.primary__heading__sub {
+  animation: moveInLeft 2s ease-out;
+}
+
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-20rem);
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255),
+      rgba(220, 220, 220)
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255),
+      rgba(220, 220, 220)
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20rem);
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255),
+      rgba(220, 220, 220)
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255),
+      rgba(220, 220, 220)
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .primary__heading {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .primary__heading {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .primary__heading {
+    font-size: 1rem;
+  }
 }
