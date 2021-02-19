@@ -1,0 +1,58 @@
+* {
+  margin: 0%;
+  padding: 0;
+}
+html {
+  font-size: 10px;
+}
+
+.Navbar {
+  background-image: linear-gradient(
+    to right bottom,
+    rgb(57, 165, 165),
+    rgb(143, 148, 226)
+  );
+  overflow: hidden;
+}
+
+.Navbar__List {
+  list-style: none;
+  float: left;
+  padding: 1rem 2rem;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 900;
+  background-image: linear-gradient(
+    to right bottom,
+    rgb(0, 0, 0),
+    rgb(73, 127, 131)
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.Navbar__List:hover {
+  transform: scale(1.5);
+  transition: all 0.5s;
+  color: aqua;
+}
+
+.List-5 {
+  float: right;
+}
+
+.section__home {
+  height: 96vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgb(15, 54, 161),
+      rgb(0, 21, 114)
+    ),
+    url(../assets/13nov_resize.jpg);
+  background-blend-mode: color;
+  background-size: cover;
+  background-position: bottom;
+
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 76vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 76vh, 0 100%);
+}
