@@ -45,3 +45,41 @@ html {
 .List-5 {
   float: right;
 }
+
+.section__home {
+  height: 96vh;
+  position: relative;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(42, 197, 176, 0.7),
+      rgba(14, 13, 83, 0.7)
+    ),
+    url(../assets/13nov_resize.jpg);
+  background-blend-mode: color-burn;
+  background-size: cover;
+  background-position: top left;
+
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 76vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 76vh, 0 100%);
+}
+
+.primary__heading {
+  width: 100%;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  text-align: center;
+
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255),
+    rgba(220, 220, 220)
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+}
