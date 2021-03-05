@@ -1,0 +1,165 @@
+* {
+  margin: 0%;
+  padding: 0;
+}
+html {
+  font-size: 10px;
+}
+
+.Navbar {
+  background-image: linear-gradient(
+    to right bottom,
+    rgb(57, 165, 165),
+    rgb(143, 148, 226)
+  );
+  overflow: hidden;
+}
+
+.Navbar__List {
+  list-style: none;
+  float: left;
+  padding: 1rem 2rem;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 900;
+  background-image: linear-gradient(
+    to right bottom,
+    rgb(0, 0, 0),
+    rgb(73, 127, 131)
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.Navbar__List:hover {
+  transform: scale(1.5);
+  transition: all 0.5s;
+  color: aqua;
+}
+
+.List-4 a {
+  color: unset;
+  border: 0;
+}
+
+.List-5 {
+  float: right;
+}
+
+@media only screen and (max-width: 500px) {
+  .Navbar__List {
+    float: none;
+  }
+}
+
+.section__home {
+  height: 96vh;
+  position: relative;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(42, 197, 176, 0.7),
+      rgba(14, 13, 83, 0.7)
+    ),
+    url(../assets/laptop4.jpg);
+  background-blend-mode: color-burn;
+  background-size: cover;
+  background-position: top left;
+}
+
+.primary__heading {
+  width: 100%;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  text-align: center;
+
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255),
+    rgba(220, 220, 220)
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.primary__heading__main {
+  animation: moveInTop 2s ease-out;
+}
+.primary__heading__sub {
+  animation: moveInLeft 2s ease-out;
+}
+
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-20rem);
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255),
+      rgba(220, 220, 220)
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255),
+      rgba(220, 220, 220)
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20rem);
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255),
+      rgba(220, 220, 220)
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255),
+      rgba(220, 220, 220)
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .primary__heading {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .primary__heading {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .primary__heading {
+    font-size: 1rem;
+  }
+}
