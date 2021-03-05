@@ -60,13 +60,10 @@ html {
       rgba(42, 197, 176, 0.7),
       rgba(14, 13, 83, 0.7)
     ),
-    url(../assets/13nov_resize.jpg);
+    url(../assets/laptop4.jpg);
   background-blend-mode: color-burn;
   background-size: cover;
   background-position: top left;
-
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 76vh, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 76vh, 0 100%);
 }
 
 .primary__heading {

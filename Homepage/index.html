@@ -1,35 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <!--NAVBAR-->
-    <nav class="Navbar" >
-        <ul class="Navbar__left" >
-            <li class="Navbar__List List-1" >Home</li>
-            <li class="Navbar__List List-2" >Medicine</li>
-            <li class="Navbar__List List-3" >Signup</li>
-            <li class="Navbar__List List-4" > <a href="../LOGIN/login.html">Login</a> </li>
-        </ul>
-            <ul class="Navbar__right">
-            <li class="Navbar__List List-5" >Cart</li>
-        </ul>
+    <nav class="Navbar">
+      <ul class="Navbar__left">
+        <li class="Navbar__List List-1">Home</li>
+        <li class="Navbar__List List-2">Medicine</li>
+        <li class="Navbar__List List-3">Signup</li>
+        <li class="Navbar__List List-4">
+          <a href="../LOGIN/login.html">Login</a>
+        </li>
+      </ul>
+      <ul class="Navbar__right">
+        <li class="Navbar__List List-5">Cart</li>
+      </ul>
     </nav>
 
+    <header>
+      <section>
+        <div class="section__home">
+          <div class="primary__heading">
+            <h1 class="primary__heading__main">Welcome to our page</h1>
+            <h3 class="primary__heading__sub">Lets Buy Medicine</h3>
+          </div>
+        </div>
+      </section>
+    </header>
+
     <main>
-        <section>
-            <div class="section__home">
-                <div class="primary__heading">
-                    <h1 class="primary__heading__main" > Welcome to our page</h1>
-                    <h3 class="primary__heading__sub">Lets Buy Medicine</h3>
+      <section class="section-laptop" id="section-laptop">
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">Most popular Laptop</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--1">&nbsp;</div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--1"
+                    >Laptop 1</span
+                  >
+                </h4>
+                <div class="card__details">
+                  <ul>
+                    <li>i7 8th gen</li>
+                    <li>8gb ram</li>
+                    <li>4 gb gtx 1650</li>
+                    <li>4 hours battery</li>
+                    <li>120 fps</li>
+                  </ul>
                 </div>
+              </div>
+              <div class="card__side card__side--back card__side--back-1">
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <p class="card__price-only">Only</p>
+                    <p class="card__price-value">$699</p>
+                  </div>
+                  <a href="#popup" class="btn btn--white">Book now!</a>
+                </div>
+              </div>
             </div>
-        </section>
+          </div>
+
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--2">&nbsp;</div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--2"
+                    >Laptop 2</span
+                  >
+                </h4>
+                <div class="card__details">
+                  <ul>
+                    <li>i5 8th gen</li>
+                    <li>8gb ram</li>
+                    <li>2 gb mx 230</li>
+                    <li>4 hours battery</li>
+                    <li>60 fps</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__side card__side--back card__side--back-2">
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <p class="card__price-only">Only</p>
+                    <p class="card__price-value">$999</p>
+                  </div>
+                  <a href="#popup" class="btn btn--white">Book now!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--3">&nbsp;</div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--3"
+                    >Laptop 3</span
+                  >
+                </h4>
+                <div class="card__details">
+                  <ul>
+                    <li>i7 10th gen</li>
+                    <li>16gb ram</li>
+                    <li>4gb gtx 1660 Ti</li>
+                    <li>6 hours battery</li>
+                    <li>144 fps</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__side card__side--back card__side--back-3">
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <p class="card__price-only">Only</p>
+                    <p class="card__price-value">$1897</p>
+                  </div>
+                  <a href="#popup" class="btn btn--white">Book now!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="u-center-text u-margin-top-huge">
+          <a href="#" class="btn btn--green">Discover all Laptop</a>
+        </div>
+      </section>
+
+      <section class="section-book">
+        <div class="row">
+          <div class="book">
+            <div class="book__form">
+              <form action="#" class="form">
+                <div class="u-margin-bottom-medium">
+                  <h2 class="heading-secondary">Start booking now</h2>
+                </div>
+
+                <div class="form__group">
+                  <input
+                    type="text"
+                    class="form__input"
+                    placeholder="Full name"
+                    id="name"
+                    required
+                  />
+                  <label for="name" class="form__label">Full name</label>
+                </div>
+
+                <div class="form__group">
+                  <input
+                    type="email"
+                    class="form__input"
+                    placeholder="Email address"
+                    id="email"
+                    required
+                  />
+                  <label for="email" class="form__label">Email address</label>
+                </div>
+
+                <div class="form__group u-margin-bottom-medium">
+                  <div class="form__radio-group">
+                    <input
+                      type="radio"
+                      class="form__radio-input"
+                      id="small"
+                      name="size"
+                    />
+                    <label for="small" class="form__radio-label">
+                      <span class="form__radio-button"></span>
+                      Single Laptop
+                    </label>
+                  </div>
+
+                  <div class="form__radio-group">
+                    <input
+                      type="radio"
+                      class="form__radio-input"
+                      id="large"
+                      name="size"
+                    />
+                    <label for="large" class="form__radio-label">
+                      <span class="form__radio-button"></span>
+                      Multiple Laptop
+                    </label>
+                  </div>
+                </div>
+
+                <div class="form__group">
+                  <button class="btn btn--green">Next step &rarr;</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-</body>
+
+    <footer class="footer">
+      <div class="footer__logo-box">
+        <img src="img/logo-green-2x.png" alt="Full logo" class="footer__logo" />
+      </div>
+      <div class="row">
+        <div class="col-1-of-2">
+          <div class="footer__navigation">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Company</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Contact us</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Carrers</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Privacy policy</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Terms</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-1-of-2">
+          <p class="footer__copyright">
+            <a href="#" class="footer__link"></a>
+            <a href="#" class="footer__link"></a>. Copyright &copy; by shopline
+            laptop company
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
